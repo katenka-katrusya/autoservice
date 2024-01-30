@@ -1,0 +1,25 @@
+.header {
+  padding-top: 32px;
+  background-color: #222;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 254px;
+  height: 40px;
+}
+
+.header__link {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 50px;
+  background-color: #f0f4f4;
+  color: #222;
+}
