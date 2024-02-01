@@ -65,6 +65,7 @@
 
 .radio__label:hover {
   background-color: #e4f0f0;
+  cursor: pointer;
 }
 
 .radio__input:focus-visible + .radio__label {
@@ -78,6 +79,8 @@
 
 .form__months {
   margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .form__btn-month {
@@ -87,6 +90,7 @@
 
 .form__btn-month_active {
   color: #d10014;
+  transform: scale(1.15);
 }
 
 .form__subtitle {
@@ -97,11 +101,65 @@
 
 .form__input-wrapper {
   display: grid;
+  column-gap: 8px;
+  row-gap: 12px;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 32px;
+}
+
+.form__input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #f0f4f4;
+  color: inherit;
+  outline: none;
+}
+
+.form__input:hover {
+  background-color: #f0f4f4;
+}
+
+.form__input:focus-visible {
+  border-color: #d0d0d0;
+}
+
+.form__info {
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+
+.form__btn-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  background-color: #f0f4f4;
+  color: #222;
+}
+
+.form__btn_next {
+  background-color: #d10014;
+  color: #fff;
+}
+
+.form__btn_submit {
+  background-color: #d10014;
+  color: #fff;
 }
 
 .form__btn:disabled {
   color: #222;
   background: #f0f4f4;
   opacity: 0.4;
+  pointer-events: none;
 }
