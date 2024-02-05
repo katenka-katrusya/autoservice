@@ -104,11 +104,9 @@ const updateFieldsetVisibility = () => {
 
 const createFormDay = (date) => {
   const objectMonth = date.find(item => item.month === month);
-  const indexMonth = allMonth.findIndex(item => item === month);
-  const today = new Date().getDate();
   const days = Object.keys(objectMonth.day);
 
-  let typeData = days.map(item => ({    // оборачиваем объект в скобки, чтобы вернулся (можно использовать return
+  let typeData = days.map(item => ({ // оборачиваем объект в скобки, чтобы вернулся (можно использовать return
     // вместо скобок)
     value: item,
     title: item
